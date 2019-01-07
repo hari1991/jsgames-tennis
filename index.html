@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jcanvas/21.0.1/min/jcanvas.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+    />
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+      defer
+    ></script>
+    <script src="tennis.js" defer></script>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Tennis</h1>
+
+      <p style="clear:both;">
+        Simple tennis game that can be controlled with Arrow up, Arrow down and
+        Space keys
+      </p>
+      <hr />
+
+      <div class="row">
+        <div id="gamePanel" class="col-md-9">
+          <canvas id="tennisGame" width="800px" height="500px"></canvas>
+        </div>
+        <div id="controlPanel" class="col-md-3">
+          Level :
+          <h1 id="level" style="">Level 1</h1>
+          Time :
+          <h1 id="timer" style="">0</h1>
+          <h6 class="text-muted">secs</h6>
+
+          <br />
+          <div>
+            <button
+              id="pauseButton"
+              class="btn btn-primary btn-block"
+              style="width:100%"
+            >
+              Start
+            </button>
+            <button
+              id="resetButton"
+              class="btn btn-danger btn-block"
+              style="width:100%"
+            >
+              Reset
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
